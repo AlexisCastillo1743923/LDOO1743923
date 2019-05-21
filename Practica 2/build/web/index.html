@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+ * Marcos Alexis Castillo Puente
+ * Matricula: 1743923
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+   	<title>Registro</title>
+	<link rel = "stylesheet" type="text/css" href = "main.css">
+   	<script src = "main.js"></script>
+    </head>
+    <body>
+        <!-- Logo -->
+						<h1><a href="index.html" id="logo">NOTICIAS <br> & Más <em>Sin Fronteras</em></a></h1>
+                                                
+					<!-- Nav -->
+						<nav id="nav">
+                                                        <ul>
+								<li><a href="index.html">INICIO</a></li>
+								<li><a href="noticias.html">NOTICIAS</a></li>
+                                                                <li><a href="entretenimiento.html">ENTRETENIMIENTO</a></li>
+                                                                <li><a href="ecologia.html">ECOLOGÍA</a></li>
+								<li><a href="tecnologia.html">TECNOLOGÍA</a></li>
+								<li class="current"><a href="registrarse.html">REGISTRARSE</a></li>
+                                                                <li><a href="Login.jsp">ACCEDER</a></li>
+							</ul>
+						
+						</nav>
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row 200%">
+							<div class="4u 12u(narrower)">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+
+										<section>
+											<h3>AVISO DE PRIVACIDAD</h3>
+											<p> 
+                                                                                            Otorgamos la máxima importancia a la confidencialidad y debida protección de la 
+                                                                                            información personal que le es confiada. Por su Código de Ética estámos comprometidos a manejar 
+                                                                                            tus datos personales de manera responsable y con apego a lo previsto en los Lineamientos de Transparencia, 
+                                                                                            Acceso a la Información, Archivos y Protección de Datos Personales y demás normatividad aplicable.</p>
+											
+										</section>
+
+										
+										
+
+								</div>
+							</div>
+							<div class="8u  12u(narrower) important(narrower)">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+											<header>
+												<h2>Registro</h2>
+												<p>Registrate aqui para ver y comentar.</p>
+											</header>
+
+                                                                                        <form onsubmit="return validacion();" action="Controlador" method="POST">
+                                                                                        Nombre(s):
+                                                                                        <input id="nombres" type="text" name="nombre"><br>
+
+                                                                                        Apellidos:
+                                                                                        <input id="apellidos" type="text" name="apellido"><br>
+            
+                                                                                        Fecha De Nacimiento:
+                                                                                        <input id="fecha" type="date" name="fecha"><br>			
+            
+                                                                                        E-mail:
+                                                                                        <input id="email" type="email" name="email"><br>
+
+                                                                                        Contraseña:
+                                                                                        <input id="contraseña" type="password" name="contraseña"><br>
+			
+                                                                                        <input id="enviar" type="submit" value="Registrar">
+                                                                                        </form>
+    </body>
+</html>
