@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>User</servlet-name>
+        <servlet-class>Modelo.User</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Comp</servlet-name>
+        <servlet-class>Servlet.Comp</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Sesion</servlet-name>
+        <servlet-class>Servlet.Sesion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExCookie</servlet-name>
+        <servlet-class>Servlet.ExCookie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>User</servlet-name>
+        <url-pattern>/User</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Comp</servlet-name>
+        <url-pattern>/Comp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Sesion</servlet-name>
+        <url-pattern>/Sesion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExCookie</servlet-name>
+        <url-pattern>/ExCookie</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
